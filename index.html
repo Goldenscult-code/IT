@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Over Mij</a></li>
+                <li><a href="#projects">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hallo, ik ben <span class="highlight">Jens van Ekris</span></h1>
+                <p class="subtitle">Web Developer & Designer</p>
+                <a href="#projects" class="cta-button">Bekijk Mijn Werk</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Over Mij</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile.jpeg" alt="Profielfoto">
+                </div>
+                <div class="about-text">
+                    <p>Welkom op mijn portfolio! Ik ben een passievolle web developer met een liefde voor mooie en functionele websites.</p>
+                    <div class="skills">
+                        <h3>Vaardigheden</h3>
+                        <div class="skill-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Mijn Projecten</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="assets/images/project1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Google</h3>
+                        <p>Stage gelopen bij Google voor een half jaar.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Bekijk details</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project2.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Microsoft</h3>
+                        <p>Stage bij microsoft voor een half jaar.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Bekijk details</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project3.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Nvidia</h3>
+                        <p>Een korte stage gelopen bij Nvidia.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Bekijk details</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Bericht</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Verstuur</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jens van Ekris. Alle rechten voorbehouden.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
