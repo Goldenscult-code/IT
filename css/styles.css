@@ -254,6 +254,156 @@ a.project-card {
     background: #4b5563;
 }
 
+/* Detail Page */
+.project-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 7rem 1.5rem 5rem;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span[aria-hidden="true"] {
+    color: #9ca3af;
+}
+
+.breadcrumb [aria-current="page"] {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.detail-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.detail-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.detail-meta .year-badge {
+    margin-bottom: 0;
+}
+
+.detail-period {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.detail-media {
+    margin: 0 0 3rem;
+}
+
+.detail-media img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section {
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.detail-section h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.detail-section p,
+.detail-section li {
+    max-width: 70ch;
+    color: var(--text-color);
+}
+
+.detail-section p + p {
+    margin-top: 1rem;
+}
+
+.detail-section ul {
+    padding-left: 1.25rem;
+}
+
+.detail-section li + li {
+    margin-top: 0.5rem;
+}
+
+.detail-section .tag-list {
+    margin-top: 0;
+}
+
+.placeholder-note {
+    margin-top: 1rem;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.detail-pagination {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.pagination-next {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    min-width: 200px;
+    text-decoration: none;
+}
+
+.pagination-next:hover {
+    border-color: var(--primary-color);
+    background: #fff;
+}
+
+.pagination-label {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.pagination-title {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
 /* Contact Section */
 #contact-form {
     max-width: 600px;
