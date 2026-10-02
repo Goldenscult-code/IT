@@ -161,6 +161,11 @@ h2 {
     background: var(--bg-secondary);
 }
 
+.projects-footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
