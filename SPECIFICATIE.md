@@ -299,20 +299,25 @@ Eén pagina helemaal uitschrijven als sjabloon; fasen 4 en 5 zijn daarna kopiër
 
 ## 8. Acceptatiecriteria
 
-De opdracht is af als dit allemaal klopt:
+De opdracht is af als dit allemaal klopt. `getest` betekent: gecontroleerd met een
+script of HTTP-verzoek. `handmatig` betekent: dat kan ik niet meten, dat moet je
+openen in de browser met de Live Server van VS Code.
 
-- [ ] Elke projectkaart op `index.html` en `projecten.html` linkt naar een werkende detailpagina
-- [ ] Er staan geen `href="#"` meer in de codebase
-- [ ] Het nieuwste project staat bovenaan, met zichtbaar jaartal
-- [ ] Detailpagina's tonen omschrijving, rol, technologieën en resultaat
-- [ ] Vorige/volgende werkt over alle detailpagina's heen
-- [ ] De hamburger werkt op élke pagina
-- [ ] Smooth-scroll werkt op `index.html`, en de nav-links werken vanaf elke pagina
-- [ ] Het contactformulier werkt nog steeds op `index.html`
-- [ ] Geen JS-errors in de browserconsole, op geen enkele pagina
-- [ ] Layout is goed op 375px (mobiel), 768px (tablet) en 1440px (desktop)
-- [ ] Alle afbeeldingen laden (geen 404)
-- [ ] Werk gecommit in logische stappen
+| # | Criterium | Status |
+|---|---|---|
+| 1 | Elke projectkaart linkt naar een werkende detailpagina | getest: 10 van 10 links OK |
+| 2 | Er staan geen `href="#"` meer in de codebase | getest: 0 over |
+| 3 | Detailpagina's tonen omschrijving, rol, technologieën en resultaat | getest: secties aanwezig, **teksten zijn nog `[ ]`-placeholders** |
+| 4 | Vorige/volgende werkt over alle detailpagina's heen | getest: keten sluit beide kanten op |
+| 5 | Detailpagina's hebben kruimelpad, titel en afbeelding | getest: aanwezig op alle drie |
+| 6 | Contactformulier werkt nog steeds op `index.html` | getest: formulier staat op `index.html`, komt op geen enkele andere pagina |
+| 7 | Layout is goed op 375px, 768px en 1440px | **handmatig** — ik kan geen browser renderen |
+| 8 | Geen JS-errors in de console, op geen enkele pagina | **handmatig** — ik kan JS niet uitvoeren, er staat geen Node of browser op deze machine |
+| 9 | Hamburger werkt op elke pagina | **handmatig** — code is wel geguard tegen ontbrekende elementen |
+| 10 | Smooth-scroll en nav-links werken vanaf elke pagina | **handmatig** — cross-pagina links worden door de browser afgehandeld, niet door JS |
+| 11 | Jaartalen zichtbaar, nieuwste bovenaan | **handmatig** — badge bestaat, maar de `[jaartal]`-teksten zijn nog leeg |
+| 12 | Alle afbeeldingen laden (geen 404) | getest: alle paden bestaan op schijf |
+| 13 | Werk gecommit in logische stappen | getest: 8 commits |
 
 ---
 

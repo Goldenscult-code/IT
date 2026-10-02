@@ -501,4 +501,34 @@ footer {
     .about-content {
         grid-template-columns: 1fr;
     }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .detail-meta {
+        flex-wrap: wrap;
+    }
+
+    .detail-pagination {
+        flex-direction: column;
+    }
+
+    .pagination-prev,
+    .pagination-next {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .pagination-next {
+        margin-left: 0;
+    }
+
+    .projects-intro {
+        margin-top: -1rem;
+    }
 }

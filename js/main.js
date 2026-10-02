@@ -52,17 +52,16 @@ if (contactForm) {
 }
 
 // Navbar background change on scroll
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.style.background = 'rgba(255, 255, 255, 0.95)';
-    } else {
-        nav.style.background = '#ffffff';
-    }
-});
+const nav = document.querySelector('nav');
+
+if (nav) {
+    window.addEventListener('scroll', () => {
+        nav.style.background = window.scrollY > 50 ? 'rgba(255, 255, 255, 0.95)' : '#ffffff';
+    });
+}
 
 // Animate elements on scroll
-const animateSelector = '.project-card, .about-content';
+const animateSelector = '.project-card, .about-content, .detail-header, .detail-media, .detail-section';
 
 const observerOptions = {
     threshold: 0.1

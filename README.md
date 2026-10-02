@@ -8,30 +8,57 @@ Een persoonlijke portfolio website gebouwd met HTML, CSS en JavaScript.
 - Moderne UI met hover effecten
 - Navigatie met smooth scrolling
 - Contact formulier
-- Project overzicht
+- Project overzicht op `projecten.html`
+- Detailpagina per project, bereikbaar door op een projectkaart te klikken
+- Kruimelpad en vorige/volgende-navigatie op de detailpagina's
 - Mobile hamburger menu
+
+## Pagina's
+
+| Bestand | Pagina |
+|---|---|
+| `index.html` | Homepage: intro, over mij, projectpreview, contact |
+| `projecten.html` | Overzicht van alle projecten |
+| `project-google.html` | Detailpagina project 1 |
+| `project-microsoft.html` | Detailpagina project 2 |
+| `project-nvidia.html` | Detailpagina project 3 |
+
+Het contactformulier staat alleen op `index.html`. De andere pagina's linken
+ernaar met `index.html#contact`.
 
 ## Project Structuur
 
 ```
 ITweek2/
-├── index.html          # Hoofdpagina
+├── index.html              # Homepage
+├── projecten.html          # Projectoverzicht
+├── project-google.html     # Detailpagina project 1
+├── project-microsoft.html  # Detailpagina project 2
+├── project-nvidia.html     # Detailpagina project 3
 ├── css/
-│   └── styles.css     # Stijlen
+│   └── styles.css          # Stijlen
 ├── js/
-│   └── main.js        # JavaScript functionaliteit
+│   └── main.js             # JavaScript functionaliteit
 └── assets/
-    └── images/        # Afbeeldingen
+    └── images/             # Afbeeldingen
         ├── profile.jpeg
         ├── project1.jpg
         ├── project2.png
         └── project3.jpg
 ```
 
+De detailpagina's zijn kopieen van dezelfde sjabloon. Wil je een project
+toevoegen: kopieer een bestaande detailpagina, verander de titel, het
+afbeeldingsbestand, de tekst en de vorige/volgende-links, en voeg daarna een
+kaart toe aan `projecten.html`.
+
+In `SPECIFICATIE.md` staat de volledige opdrachtspecificatie.
+In `CONTENT.md` staat welke tekens nog ingevuld moeten worden.
+
 ## Gebruik
 
-1. Open `index.html` in je browser
-2. Pas de inhoud aan in `index.html`
+1. Open `index.html` in je browser (of start de Live Server vanuit VS Code)
+2. Pas de inhoud aan in de HTML-bestanden
 3. Voeg je eigen afbeeldingen toe aan `assets/images/`
 4. Personaliseer de kleuren in `css/styles.css` (variabelen bovenaan)
 
@@ -56,7 +83,7 @@ Vervang de bestanden in `assets/images/` met je eigen afbeeldingen.
 
 - HTML5
 - CSS3 (Flexbox, Grid, CSS Variables)
-- Vanilla JavaScript
+- Vanilla JavaScript (geen frameworks, geen build-step)
 
 ## Browser Ondersteuning
 
