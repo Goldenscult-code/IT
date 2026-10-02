@@ -366,8 +366,8 @@ a.project-card {
     border-top: 1px solid #e5e7eb;
 }
 
+.pagination-prev,
 .pagination-next {
-    margin-left: auto;
     display: flex;
     flex-direction: column;
     padding: 0.75rem 1.25rem;
@@ -377,6 +377,11 @@ a.project-card {
     text-decoration: none;
 }
 
+.pagination-next {
+    margin-left: auto;
+}
+
+.pagination-prev:hover,
 .pagination-next:hover {
     border-color: var(--primary-color);
     background: #fff;
