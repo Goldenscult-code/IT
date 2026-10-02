@@ -40,6 +40,7 @@ nav {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 .nav-links {
@@ -140,7 +141,8 @@ h2 {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.skill-tags {
+.skill-tags,
+.tag-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -177,6 +179,35 @@ h2 {
     transform: translateY(-5px);
 }
 
+a.project-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.projects-intro {
+    max-width: 60ch;
+    margin: -2rem auto 3rem;
+    text-align: center;
+    color: #6b7280;
+}
+
+.year-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0.6rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.nav-links a[aria-current="page"] {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 .project-card img {
     width: 100%;
     height: 200px;
@@ -202,6 +233,7 @@ h2 {
 }
 
 .btn {
+    display: inline-block;
     padding: 0.5rem 1rem;
     background: var(--primary-color);
     color: white;
