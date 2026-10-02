@@ -2,16 +2,18 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-// Close mobile menu when clicking a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
-});
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+}
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -32,20 +34,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Form submission
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Here you can add your own form handling logic
-    // For example, sending to an email service or API
-    console.log('Form submitted:', { name, email, message });
-    
-    alert('Bedankt voor uw bericht! Ik zal zo snel mogelijk reageren.');
-    contactForm.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Here you can add your own form handling logic
+        // For example, sending to an email service or API
+        console.log('Form submitted:', { name, email, message });
+
+        alert('Bedankt voor uw bericht! Ik zal zo snel mogelijk reageren.');
+        contactForm.reset();
+    });
+}
 
 // Navbar background change on scroll
 window.addEventListener('scroll', () => {
@@ -58,6 +62,8 @@ window.addEventListener('scroll', () => {
 });
 
 // Animate elements on scroll
+const animateSelector = '.project-card, .about-content';
+
 const observerOptions = {
     threshold: 0.1
 };
@@ -71,7 +77,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.project-card, .about-content').forEach(el => {
+document.querySelectorAll(animateSelector).forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
